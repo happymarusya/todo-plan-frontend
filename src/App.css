@@ -1,0 +1,156 @@
+body {
+  background: url("https://images.pexels.com/photos/4377616/pexels-photo-4377616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  scrollbar-gutter: auto;
+  overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313133;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.container {
+  background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));
+  width: 500px;
+  height: 80vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 32px 0 rgba(70, 70, 70, 0.37);
+  backdrop-filter: blur( 17px );
+  -webkit-backdrop-filter: blur( 19px );
+  overflow-y: auto;
+  flex-wrap: nowrap;
+  padding-bottom: 60px;
+}
+
+.container-2 {
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  display: block;
+  width: 75%;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  background: #313133;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow:4px 4px 10px #dde9fb, -4px -4px 10px #f9f9f9;
+}
+
+h1 {
+  color: #283139;
+  font-size: 75px;
+  text-shadow: 1px 1px 2px #f7f9fa;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-style: italic;
+  color: #283139;
+}
+
+button {
+  padding: 15px 60px 15px 60px;
+  background-color: #393A5A;
+  color: rgb(210, 204, 204);
+  font-size: 24px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px #dde9fb, -4px -4px 10px #f9f9f9;
+}
+
+button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 1px #283467, inset -1px -1px 1px #fff;
+}
+
+p {
+  max-width: 100%;
+  color: #393A5A;
+  width: 450px;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #393A5A;
+}
+
+.plans {
+  display: flex;
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  color: #393A5A;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  body {
+    background-position: center;
+  }
+
+  p {
+    width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  h1 {
+    font-size: 50px;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  p {
+    width: 300px;
+  }
+
+  button {
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    right: 0;
+    top: 0;
+  }
+
+}
